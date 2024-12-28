@@ -26,7 +26,31 @@ const eslintConfig = [
       ],
       "react/react-in-jsx-scope": "off",
       "prettier/prettier": "error",
-      "no-console": ["warn", { allow: ["warn", "error"] }],
+      "no-console": "error",
+      "no-debugger": "error",
+      "no-alert": "error",
+      "no-unused-vars": "error",
+      "import/order": [
+        "error",
+        {
+          groups: [
+            "builtin",
+            "external",
+            "internal",
+            "unknown",
+            "parent",
+            "sibling",
+          ],
+          pathGroups: [
+            {
+              pattern: "~/**",
+              group: "parent",
+              position: "after",
+            },
+          ],
+          "newlines-between": "always",
+        },
+      ],
     },
   },
 ];
