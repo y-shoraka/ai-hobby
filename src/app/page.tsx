@@ -1,4 +1,10 @@
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
-  console.log("heelloooo");
-  return <div>hello guys...!</div>;
+  return (
+    <div>
+      hello guys...!
+      <Button>testing button</Button>
+    </div>
+  );
 }
