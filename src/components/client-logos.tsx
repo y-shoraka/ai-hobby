@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export function ClientLogos() {
   return (
@@ -43,6 +43,5 @@ export function ClientLogos() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

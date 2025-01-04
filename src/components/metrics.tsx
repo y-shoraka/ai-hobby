@@ -1,27 +1,27 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card";
 
 const metrics = [
   {
     value: "10M+",
     label: "Creators Analyzed",
-    description: "Across multiple social platforms"
+    description: "Across multiple social platforms",
   },
   {
     value: "98%",
     label: "Accuracy Rate",
-    description: "In audience analysis and predictions"
+    description: "In audience analysis and predictions",
   },
   {
     value: "2.5B+",
     label: "Data Points",
-    description: "Processed daily for insights"
+    description: "Processed daily for insights",
   },
   {
     value: "500+",
     label: "Enterprise Clients",
-    description: "Trust our platform globally"
-  }
-]
+    description: "Trust our platform globally",
+  },
+];
 
 export function Metrics() {
   return (
@@ -32,7 +32,8 @@ export function Metrics() {
             Trusted by leading brands worldwide
           </h2>
           <p className="text-white/80 text-lg">
-            Our platform processes billions of data points daily to provide the most accurate influencer marketing insights
+            Our platform processes billions of data points daily to provide the
+            most accurate influencer marketing insights
           </p>
         </div>
 
@@ -43,18 +44,13 @@ export function Metrics() {
                 <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-[#5800FF] to-purple-500 bg-clip-text text-transparent">
                   {metric.value}
                 </div>
-                <div className="text-xl font-semibold mb-2">
-                  {metric.label}
-                </div>
-                <p className="text-white/70">
-                  {metric.description}
-                </p>
+                <div className="text-xl font-semibold mb-2">{metric.label}</div>
+                <p className="text-white/70">{metric.description}</p>
               </CardContent>
             </Card>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-
