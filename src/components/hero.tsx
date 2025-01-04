@@ -1,8 +1,9 @@
-'use client'
+"use client";
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Progress } from "@/components/ui/progress"
+import Link from "next/link";
+
+import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
 
 export function Hero() {
   return (
@@ -14,24 +15,23 @@ export function Hero() {
               AI Powered Influencer Marketing Platform
             </span>
           </div>
-          
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1a0f4d] leading-tight">
             Discover, evaluate, and monitor creators for your campaigns
           </h1>
-          
+
           <p className="text-lg text-gray-600 max-w-xl">
-            Enhance discovery, streamline tracking, and share detailed influencer marketing reports effortlessly
+            Enhance discovery, streamline tracking, and share detailed
+            influencer marketing reports effortlessly
           </p>
-          
+
           <div className="space-y-4">
             <Button
               asChild
               size="lg"
               className="bg-[#5800FF] text-white hover:bg-[#5800FF]/90 h-12 px-8"
             >
-              <Link href="/find-creators">
-                Find Creators For Free
-              </Link>
+              <Link href="/find-creators">Find Creators For Free</Link>
             </Button>
             <p className="text-sm text-gray-500">No credit card required</p>
           </div>
@@ -54,7 +54,7 @@ export function Hero() {
                   <circle
                     className="text-[#5800FF]"
                     strokeWidth="10"
-                    strokeDasharray={24.3 * 283 / 100 + " 283"}
+                    strokeDasharray={(24.3 * 283) / 100 + " 283"}
                     strokeLinecap="round"
                     stroke="currentColor"
                     fill="transparent"
@@ -110,6 +110,5 @@ export function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

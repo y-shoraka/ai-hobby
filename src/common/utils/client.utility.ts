@@ -1,9 +1,8 @@
-/* eslint-disable sonarjs/no-duplicated-branches */
-/* eslint-disable sonarjs/no-all-duplicated-branches */
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import axios, { type AxiosInstance, type AxiosResponse } from "axios";
 import { getSession, signOut } from "next-auth/react";
-
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 class Client {
   readonly axiosInstance: AxiosInstance;

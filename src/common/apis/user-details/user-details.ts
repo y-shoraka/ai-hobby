@@ -11,14 +11,12 @@ const userApi = async (query: string) => {
 
     return response;
   } catch (error) {
-    console.error("Error fetching user details:", error);
     throw error;
   }
 };
 
-export const getSubscriberCount = (data: any) => {
-  const nextUrl = ` https://www.googleapis.com/youtube/v3/channels?part=statistics&id=CHANNEL_ID&key=YOUR_API_KEY`;
-  console.log(data.items.ids.map());
+export const getSubscriberCount = () => {
+  // const _nextUrl = ` https://www.googleapis.com/youtube/v3/channels?part=statistics&id=CHANNEL_ID&key=YOUR_API_KEY`;
 };
 
 export const useGetUserDetails = (query: string) => {

@@ -1,20 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-
 import { useForm } from "react-hook-form";
-import { useGetUserDetails } from "@/common/apis/user-details/user-details";
+
 import {
   Card,
   CardHeader,
   CardTitle,
-  CardDescription,
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useGetUserDetails } from "@/common/apis/user-details/user-details";
 
 type FormData = {
   search: string;
@@ -22,7 +22,7 @@ type FormData = {
 
 const Dashboard = () => {
   const [searchValue, setSearchValue] = useState("");
-  const { register, handleSubmit, watch } = useForm<FormData>();
+  const { register, handleSubmit } = useForm<FormData>();
   const { data, isSuccess } = useGetUserDetails(searchValue);
 
   const submitHandler = (data: FormData) => {
@@ -44,7 +44,7 @@ const Dashboard = () => {
       <div className="px-4 flex flex-col gap-3">
         {data?.data &&
           isSuccess &&
-          data.data?.items.map((item: any) => (
+          data.data?.items.map((item: Record<string, any>) => (
             <Card key={item?.snippet?.channelId}>
               <CardHeader>
                 <CardTitle>{item.snippet.channelTitle}</CardTitle>

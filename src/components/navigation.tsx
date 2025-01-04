@@ -1,7 +1,8 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import Link from "next/link";
+import Image from "next/image";
+
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export function Navigation() {
   return (
@@ -16,28 +17,46 @@ export function Navigation() {
             className="h-8 w-auto"
           />
         </Link>
-        
+
         <div className="hidden md:flex items-center space-x-8">
           <div className="flex items-center space-x-1">
-            <Link href="/solutions" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+            <Link
+              href="/solutions"
+              className="text-sm font-medium text-gray-600 hover:text-gray-900"
+            >
               Solutions
             </Link>
           </div>
           <div className="flex items-center space-x-1">
-            <Link href="/tools" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+            <Link
+              href="/tools"
+              className="text-sm font-medium text-gray-600 hover:text-gray-900"
+            >
               Free AI Tools
             </Link>
-            <Badge variant="secondary" className="bg-[#e8faf0] text-[#16a34a] border-0">
+            <Badge
+              variant="secondary"
+              className="bg-[#e8faf0] text-[#16a34a] border-0"
+            >
               NEW
             </Badge>
           </div>
-          <Link href="/contact" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+          <Link
+            href="/contact"
+            className="text-sm font-medium text-gray-600 hover:text-gray-900"
+          >
             Contact us
           </Link>
-          <Link href="/pricing" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+          <Link
+            href="/pricing"
+            className="text-sm font-medium text-gray-600 hover:text-gray-900"
+          >
             Pricing
           </Link>
-          <Link href="/blog" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-gray-600 hover:text-gray-900"
+          >
             Blog
           </Link>
         </div>
@@ -53,13 +72,10 @@ export function Navigation() {
             asChild
             className="bg-[#5800FF] text-white hover:bg-[#5800FF]/90"
           >
-            <Link href="/try-free">
-              Try For Free
-            </Link>
+            <Link href="/try-free">Try For Free</Link>
           </Button>
         </div>
       </div>
     </nav>
-  )
+  );
 }
-
