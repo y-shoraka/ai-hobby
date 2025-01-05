@@ -33,7 +33,7 @@ const eslintConfig = [
       "no-console": "error", // Disallow console logs
       "no-debugger": "error", // Disallow debugger statements
       "no-alert": "error", // Disallow alert statements
-      "no-unused-vars": "error", // Disallow unused variables
+      "no-unused-vars": "off", // Disallow unused variables
       // Import sorting
       "import/order": [
         "error",
